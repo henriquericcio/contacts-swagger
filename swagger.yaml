@@ -31,6 +31,22 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Contact'
+  /contacts2:
+    get:
+      tags:
+        - open
+      summary: get all contacts
+      operationId: getAllContacts
+      description: Returns all contacts available in the system 
+      responses:
+        '200':
+          description: list of contacts available in the system 
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Contact'
     post:
       tags:
         - open
